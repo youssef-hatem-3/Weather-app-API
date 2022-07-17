@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assignment weather</title>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg p-3 bg-dark ">
+            <div class="logo container-fluid d-flex justify-content-around ">
+                <a href="index.html" class="branding d-flex align-items-center ">
+                    <img src="images/logo.png" alt="" class="logo mx-3" width="64" height="38">
+                </a>
+            </div>
+        </nav>
+        <section class="">
+        <div class="container w-75" id="findLocationForm">
+            <div class="row p-3">
+                <form class="d-flex bg-dark my-5 p-3 findForm" role="search">
+                    <input id="searchBar"  class="form-control me-2" type="search" placeholder="Find your Location" aria-label="Search">
+                </form>
+            </div>
+        </div>
+        <div class="container w-75 text-white">
+            <div class="row justify-content-between gx-1">
+                <div class="todayForcast col-lg-4">
+                    <div class="dayAndDateToday d-flex justify-content-between text-white">
+                        <h5 id="todayDay"></h5>
+                        <h5 id="todayDate"></h5>
+                    </div>
+                    <div class="row city text-white">
+                        <h1 id="searchedTown" class="pt-3 ps-5"></h1>
+                    </div>
+                    <div class="row">
+                        <div  class="col-md-8 d-flex justify-content-center align-items-center">
+                          <p id="currentTemperature" class="temp ps-2"></p> 
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <div class="forecast-icon">
+                                <img id="currentStatusLogo" src="" alt="" width="90">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row city text-white">
+                        <h3 id="currentStatus" class="px-5 py-3 text-primary"></h3>
+                    </div>
+                    <div class="row ">
+                        <div class="col-4 d-flex justify-content-between align-items-center">
+                            <div class="col-12 d-flex justify-content-center align align-items-center py-2">
+                                <p id="rianProp"></p>     
+                                <p><i class="fa-solid fa-umbrella fa-lg"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="col-12 d-flex justify-content-center align align-items-center py-2">
+                                <p id="windKiloPerHour"></p>
+                                <p><i class="fa-solid fa-wind"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="col-12 d-flex justify-content-center align align-items-center py-2">
+                                <p id="windDirection"></p>
+                                <p><i class="fa-solid fa-compass"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tomorrowForcast col-lg-4">
+                    <div class="dayAndDateTomorrow d-flex justify-content-between text-white">
+                        <h5 id="tomorrowDay"></h5>
+                        <h5 id="tomorrowDate"></h5>
+                    </div>
+                        <div class="m-5 d-flex justify-content-center align-items-center text-center  ">
+                            <div class="tempInfo">
+                                <img id="tomorrowStatusLogo" src="" alt="" width="90">
+                                <h3 id="tomorrowMinTemperature" class="fw-bolder"></h3>
+                                <h3 id="tomorrowMaxTemperature" class="fw-bolder"></h3>  
+                                <h3 id="tomorrowStatus" class="text-primary"></h3>
+                            </div>
+                        </div>
+                </div>
+                <div class="aftertomorrowForcast col-lg-4">
+                    <div class="dayAndDateTomorrow d-flex justify-content-between text-white">
+                        <h5 id="afterTomorrowDay"></h5>
+                        <h5 id="afterTomorrowDate"></h5>
+                    </div>
+                        <div class="m-5 d-flex justify-content-center align-items-center text-center  ">
+                            <div class="tempInfo">
+                                <img id="aftertomorrowStatusLogo" src="" alt="" width="90">
+                                <h3 id="aftertomorrowMinTemperature" class="fw-bolder"></h3>
+                                <h3 id="aftertomorrowMaxTemperature" class="fw-bolder"></h3>  
+                                <h3 id="aftertomorrowStatus" class="text-primary"></h3>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer class="w-100 ">
+            <div class="container w-75">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="d-flex bg-dark my-5 p-3 findForm" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Enter your E-mail to subscribe" aria-label="Search">
+                            <button class=" findBtn btn " type="submit">subscribe</button>
+                          </form>
+                        </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="col-md-3 d-flex align-items-center justify-content-center iconBackground  ">
+                                <i class="fa-brands fa-twitter "></i>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center iconBackground">
+                                <i class="fa-brands fa-facebook-f "></i>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center iconBackground">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center justify-content-center iconBackground ">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="js/main.js"></script>
+    </body>
+</html>
